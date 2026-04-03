@@ -1,5 +1,6 @@
 import "./style.css"
 
-document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
-<canvas id="hero"></canvas>
-`
+const canvas = document.getElementById("game") as HTMLCanvasElement
+const ctx = canvas.getContext("2d")
+
+ctx?.fillRect(10, 10, 50, 50)
